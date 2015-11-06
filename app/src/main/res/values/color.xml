@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fon">#ffffff</color>
+     <color name="meseng_color">#0082ca</color>
+         <color name="light">#0288D1</color>
+    <color name="dark">#026DA7</color>
+</resources>

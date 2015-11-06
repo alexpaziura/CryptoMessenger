@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ToolBarStyle"
+            android:elevation="8dp"/>
+   <TextView
+        android:id="@+id/comu"
+        style="?attr/textView2" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кому: "
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+           >
+        </TextView>
+ <TextView
+        android:id="@+id/number_komu"
+        style="?attr/textView1" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+         >
+        </TextView>
+        
+        <TextView
+            android:id="@+id/openmes"
+            style="?attr/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+
+            android:text="Відкритий текст:" />
+        
+        <TextView
+        android:id="@+id/opentext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        style="?attr/textView1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+                >
+        </TextView>
+
+            <TextView
+                android:id="@+id/zaktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+
+                style="?attr/textView2"
+                android:text="Закритий текст:" >
+
+        </TextView>
+    <TextView
+        android:id="@+id/shifrsms"
+        style="?attr/textView1" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+            >
+        </TextView>
+</LinearLayout>

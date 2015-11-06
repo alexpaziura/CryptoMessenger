@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ToolBarStyle"
+            android:elevation="8dp"/>
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Шифрувати SMS"
+        android:textStyle="bold"
+        android:textColor="@color/dark" android:textSize="18dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Додавання по модулю N"
+            android:textColor="@color/dark"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:id="@+id/radio1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Шифр Плейфеєра"
+            android:textColor="@color/dark"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Шифр Віжинера"
+            android:textColor="@color/dark" android:textSize="18dp"/>
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Шифр Цезаря"
+            android:textColor="@color/dark" android:textSize="18dp"/>
+    </RadioGroup>
+    
+<TextView
+        android:id="@+id/tvKey"
+        style="?attr/textView2" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ключ: "
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        </TextView>
+        
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="8"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textColor="#026DA7">
+    </EditText>
+
+    <Button
+        android:id="@+id/save_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зберегти"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textSize="24dp"/>
+    <TextView
+        android:id="@+id/tv1"
+        style="?attr/textView1" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вимоги до ключа:"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        </TextView>
+    <TextView
+        android:id="@+id/tv2"
+        style="?attr/textView1" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Для додавання по модулю N, шифрів Плейфеєра, Віжинера: A-Z,a-z,0-9"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        </TextView>
+        <TextView
+        android:id="@+id/tv3"
+        style="?attr/textView1" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Для шифрів Плейфеєра, Віжинера: A-Z,a-z"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        </TextView>
+            <TextView
+        android:id="@+id/tv4"
+        style="?attr/textView1" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Для шифра Цезаря: 0-9"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        </TextView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
